@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+:root{
+    --white: #fafafa;
+    --dark: #263238;
+    --darkgray: #607d8b;
+    --gray: #eceff1;
+}
+
+body{
+    background: var(--white);
+    color: var(--darkgray);
+    font-family: 'Roboto Slab', serif;
+}
+
+.pokemon-cards, .btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-group .btn{
+    flex-grow: 0;
+}
+
+.pokemon-cards .card{
+    border: none;
+    background: var(--white);
+    text-transform: capitalize;
+    width: 160px;
+    height: 245px;
+    overflow: hidden;
+}
+
+.pokemon-cards .card .body{
+    background: var(--gray);
+}
+
+.pokemon-cards .card .card-title{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.pokemon-cards .card li{
+    color: var(--white);
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 13px;
+    border: none;
+}
+
+.pokemon-cards .card .pokemon-id{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--darkgray);
+    color: var(--white);
+    padding: 2px 7px;
+    border-radius: 0 5px;
+    font-size: 12px;
+}
